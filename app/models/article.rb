@@ -1,6 +1,6 @@
 class Article < ActiveRecord::Base
   
-  has_one :category
+  belongs_to :category
   
   validates_presence_of :title, :content
   
